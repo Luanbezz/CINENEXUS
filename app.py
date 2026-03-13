@@ -194,7 +194,7 @@ BANCO_DE_FILMES = {
     },
     13: {
         "titulo": "Crepúsculo", "ano": 2008, "nota": "6.3", "genero": "Fantasia", 
-        "trailer": "nowfetk7su0", "atores_ids": [ 122,],
+        "trailer": "nowfetk7su0", "atores_ids": [ ],
         "imagem": "https://media.themoviedb.org/t/p/w300_and_h450_face/o4ki1gYHkP6IWNdwjHvI9vzfpuC.jpg",
         "descricao": "Isabella Swan é uma adolescente que vai morar com seu pai em uma nova cidade depois que sua mãe decide casar-se novamente. No colégio, ela fica fascinada por Edward Cullen, um garoto que esconde um segredo obscuro. Eles se apaixonam, mas Edward sabe que quanto mais avançam no relacionamento, mais ele está colocando Bella e aqueles à sua volta em perigo."
     },
@@ -232,6 +232,7 @@ if __name__ == '__main__':
 if __name__ == '__main__':
 
     app.run(debug=True)
+
 
 
 
