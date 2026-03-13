@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ filme.titulo }} | CineNexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Efeito de fundo imersivo usando a imagem do filme */
+        .backdrop {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, rgba(5,5,5,0.8), #050505), url('{{ filme.imagem }}');
+            background-size: cover;
+            background-position: center;
+            filter: blur(80px);
+            transform: scale(1.1);
+            z-index: -1;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body class="bg-[#050505] text-white font-sans">
+    
+    <div class="backdrop"></div>
+
+    <div class="max-w-6xl mx-auto py-12 px-6">
+        <a href="/" class="text-white/50 hover:text-red-500 font-bold mb-12 inline-block transition">← VOLTAR</a>
+
+        <!-- Player de Trailer -->
+        <div class="aspect-video w-full rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] mb-16 bg-black">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/{{ filme.trailer }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-16">
+            <div class="hidden md:block">
+                <img src="{{ filme.imagem }}" class="rounded-2xl shadow-2xl border border-white/10 sticky top-32">
+            </div>
+
+            <div class="md:col-span-3">
+                <span class="bg-red-600 text-[10px] font-black px-3 py-1 rounded-full tracking-widest uppercase">{{ filme.genero }}</span>
+                <h1 class="text-7xl font-black mb-6 mt-4 tracking-tighter">{{ filme.titulo }}</h1>
+                
+                <p class="text-white/70 text-2xl leading-relaxed mb-12 font-light italic">"{{ filme.descricao }}"</p>
+                
+                <h3 class="text-sm font-black mb-6 text-white/30 uppercase tracking-[0.3em]">Elenco Principal</h3>
+                <div class="flex flex-wrap gap-4">
+                    {% for aid, ator in atores.items() %}
+                    <a href="/ator/{{ aid }}" class="bg-white/5 backdrop-blur-md border border-white/10 p-2 pr-8 rounded-full flex items-center gap-4 hover:bg-red-600 transition group">
+                        <img src="{{ ator.foto }}" class="w-12 h-12 rounded-full object-cover shadow-lg">
+                        <span class="font-bold text-sm text-white/80 group-hover:text-white">{{ ator.nome }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

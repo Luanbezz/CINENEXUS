@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CineNexus | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fundo com gradiente sutil e grão para parecer cinema */
+        body {
+            background-color: #050505;
+            background-image: radial-gradient(circle at 50% -20%, #1a1a2e 0%, #050505 80%);
+        }
+        .blob {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: -1;
+            opacity: 0.15;
+        }
+    </style>
+</head>
+<body class="text-white font-sans overflow-x-hidden">
+    
+    <!-- Luzes de Fundo (Blobs) -->
+    <div class="blob bg-red-600 top-[-100px] left-[-100px]"></div>
+    <div class="blob bg-blue-600 bottom-[-100px] right-[-100px]"></div>
+
+    <nav class="p-6 sticky top-0 z-50 bg-black/40 backdrop-blur-xl border-b border-white/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-black text-red-600 tracking-tighter">CINENEXUS</h1>
+            <form action="/" method="GET" class="relative w-1/3">
+                <input type="text" name="q" value="{{ busca }}" placeholder="Buscar filmes..." 
+                       class="w-full bg-white/5 border border-white/10 rounded-full py-2 px-10 focus:outline-none focus:border-red-600 focus:bg-white/10 transition">
+                <span class="absolute left-4 top-2.5 opacity-40">🔍</span>
+            </form>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 relative">
+        <h2 class="text-xs font-black mb-8 uppercase tracking-[0.3em] text-gray-500">Catálogo Original</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+            {% for id, filme in filmes.items() %}
+            <a href="/filme/{{ id }}" class="group relative">
+                <div class="relative overflow-hidden rounded-2xl aspect-[2/3] border border-white/10 group-hover:border-red-600/50 transition-all duration-500 shadow-2xl">
+                    <img src="{{ filme.imagem }}" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                </div>
+                <h3 class="mt-4 font-bold text-sm group-hover:text-red-500 transition truncate">{{ filme.titulo }}</h3>
+                <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">{{ filme.ano }} • ⭐ {{ filme.nota }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>
