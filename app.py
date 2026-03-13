@@ -116,12 +116,6 @@ BANCO_DE_ATORES = {
         "foto": "https://media.themoviedb.org/t/p/w300_and_h450_face/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg",
         "bio": "Bernthal nasceu e cresceu em Washington onde graduou-se na Sidwell Friends School. Ele estudou no Skidmore College, e em seguida, na Moscow Art Theatre na Rússia, instituição pela qual também jogou baseball profissional, filiado à federação de beisebol profissional europeu. Enquanto em Moscou, foi notado pelo diretor da Formação Avançada de Teatro da Universidade Harvard no American Repertory Theatre.",
         "filmes_ids": [11, 12]},
-    122: {
-        "nome": "Robert Pattinson",
-        "foto": "https://media.themoviedb.org/t/p/w300_and_h450_face/8A4PS5iG7GWEAVFftyqMZKl3qcr.jpg",
-        "bio": "Robert Douglas Thomas Pattinson (Londres, 13 de maio de 1986) é um ator, modelo e músico britânico. É mais conhecido por interpretar Edward Cullen nas cinco adaptações cinematográficas da saga Crepúsculo - Twilight, Bruce Wayne/Batman em The Batman de Matt Reeves pela DC Comics, Cedrico Diggory em "Harry Potter e o Cálice de Fogo" e Neil em Tenet de Christopher Nolan. Protagonista das adaptações cinematográficas dos romances de Crepúsculo (2008-2012). Depois de estrelar os dramas românticos Remember Me (2010) e Water for Elephants (2011), Pattinson começou a trabalhar em filmes independentes.",
-        "filmes_ids": [13]},
-    
 }
 
 # --- BANCO DE FILMES (Posters Reais TMDB) ---
@@ -238,6 +232,7 @@ if __name__ == '__main__':
 if __name__ == '__main__':
 
     app.run(debug=True)
+
 
 
 
