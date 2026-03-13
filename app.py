@@ -130,7 +130,7 @@ BANCO_DE_ATORES = {
         "nome": "Kristen Stewart",
         "foto": "https://media.themoviedb.org/t/p/w300_and_h450_face/ryhCjTGqS6G6OprbR0qUEH355lA.jpg",
         "bio": "Kristen Jaymes Stewart (Los Angeles, 9 de abril de 1990) é uma atriz e diretora de cinema americana. Nascida em Los Angeles, filha de pais que trabalharam no show business, Stewart começou sua carreira como atriz infantil em 1999. Ela ganhou notoriedade em 2002 por interpretar a filha de Jodie Foster no thriller Panic Room. Posteriormente, ela estrelou Speak (2004), Catch That Kid (2004), Zathura: A Space Adventure (2005) e Into the Wild (2007). Ela recebeu amplo reconhecimento por interpretar Bella Swan na série de filmes The Twilight Saga (2008-12), que coletivamente arrecadou mais de $ 3,3 bilhões em todo o mundo.",
-        "filmes_ids": [13]},    
+        "filmes_ids": [13]}    
 }
 
 # --- BANCO DE FILMES (Posters Reais TMDB) ---
@@ -247,4 +247,5 @@ if __name__ == '__main__':
 if __name__ == '__main__':
 
     app.run(debug=True)
+
 
