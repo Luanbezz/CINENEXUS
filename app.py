@@ -121,16 +121,7 @@ BANCO_DE_ATORES = {
         "foto": "https://media.themoviedb.org/t/p/w300_and_h450_face/8A4PS5iG7GWEAVFftyqMZKl3qcr.jpg",
         "bio": "Robert Douglas Thomas Pattinson (Londres, 13 de maio de 1986) é um ator, modelo e músico britânico. É mais conhecido por interpretar Edward Cullen nas cinco adaptações cinematográficas da saga Crepúsculo - Twilight, Bruce Wayne/Batman em The Batman de Matt Reeves pela DC Comics, Cedrico Diggory em "Harry Potter e o Cálice de Fogo" e Neil em Tenet de Christopher Nolan. Protagonista das adaptações cinematográficas dos romances de Crepúsculo (2008-2012). Depois de estrelar os dramas românticos Remember Me (2010) e Water for Elephants (2011), Pattinson começou a trabalhar em filmes independentes.",
         "filmes_ids": [13]},
-    123: {
-        "nome": "Taylor Lautner",
-        "foto": "https://media.themoviedb.org/t/p/w300_and_h450_face/fpaxCUZEpBHtg6HuXjjJPf0tep9.jpg",
-        "bio": "Lautner began his acting career playing bit parts in comedy series such as The Bernie Mac Show (2003) and My Wife and Kids (2004), before having voice roles in television series like What's New, Scooby-Doo? (2005) and Danny Phantom (2005). In 2005, he appeared in the film Cheaper by the Dozen 2 and starred in The Adventures of Sharkboy and Lavagirl in 3-D. He also starred in the 2011 action film Abduction.",
-        "filmes_ids": [13]},
-    124: {
-        "nome": "Kristen Stewart",
-        "foto": "https://media.themoviedb.org/t/p/w300_and_h450_face/ryhCjTGqS6G6OprbR0qUEH355lA.jpg",
-        "bio": "Kristen Jaymes Stewart (Los Angeles, 9 de abril de 1990) é uma atriz e diretora de cinema americana. Nascida em Los Angeles, filha de pais que trabalharam no show business, Stewart começou sua carreira como atriz infantil em 1999. Ela ganhou notoriedade em 2002 por interpretar a filha de Jodie Foster no thriller Panic Room. Posteriormente, ela estrelou Speak (2004), Catch That Kid (2004), Zathura: A Space Adventure (2005) e Into the Wild (2007). Ela recebeu amplo reconhecimento por interpretar Bella Swan na série de filmes The Twilight Saga (2008-12), que coletivamente arrecadou mais de $ 3,3 bilhões em todo o mundo.",
-        "filmes_ids": [13]}    
+    
 }
 
 # --- BANCO DE FILMES (Posters Reais TMDB) ---
@@ -209,7 +200,7 @@ BANCO_DE_FILMES = {
     },
     13: {
         "titulo": "Crepúsculo", "ano": 2008, "nota": "6.3", "genero": "Fantasia", 
-        "trailer": "nowfetk7su0", "atores_ids": [ 122, 123, 124],
+        "trailer": "nowfetk7su0", "atores_ids": [ 122,],
         "imagem": "https://media.themoviedb.org/t/p/w300_and_h450_face/o4ki1gYHkP6IWNdwjHvI9vzfpuC.jpg",
         "descricao": "Isabella Swan é uma adolescente que vai morar com seu pai em uma nova cidade depois que sua mãe decide casar-se novamente. No colégio, ela fica fascinada por Edward Cullen, um garoto que esconde um segredo obscuro. Eles se apaixonam, mas Edward sabe que quanto mais avançam no relacionamento, mais ele está colocando Bella e aqueles à sua volta em perigo."
     },
@@ -247,5 +238,6 @@ if __name__ == '__main__':
 if __name__ == '__main__':
 
     app.run(debug=True)
+
 
 
