@@ -192,6 +192,12 @@ BANCO_DE_FILMES = {
         "imagem": "https://media.themoviedb.org/t/p/w300_and_h450_face/sIy0jXDkaMf3SDZGaWcmkC2IOl.jpg",
         "descricao": "Durante seis meses, Jordan Belfort trabalhou duro em uma corretora de Wall Street, seguindo os ensinamentos de seu mentor Mark Hanna. Quando finalmente consegue ser contratado como corretor da firma, acontece o Black Monday, que faz com que as bolsas de vários países caiam repentinamente. Sem emprego e bastante ambicioso, ele acaba trabalhando para uma empresa de fundo de quintal que lida com papéis de baixo valor, que não estão na bolsa de valores. É lá que Belfort tem a idéia de montar uma empresa focada neste tipo de negócio, cujas vendas são de valores mais baixos mas, em compensação, o retorno para o corretor é bem mais vantajoso. Ao lado de Donnie e outros amigos dos velhos tempos, ele cria a Stratton Oakmont, uma empresa que faz com que todos enriqueçam rapidamente e, também, levem uma vida dedicada ao prazer."
     },
+    12: {
+        "titulo": "Crepúsculo", "ano": 2008, "nota": "6.3", "genero": "Fantasia", 
+        "trailer": "nowfetk7su0", "atores_ids": [ ],
+        "imagem": "https://media.themoviedb.org/t/p/w300_and_h450_face/o4ki1gYHkP6IWNdwjHvI9vzfpuC.jpg",
+        "descricao": "Isabella Swan é uma adolescente que vai morar com seu pai em uma nova cidade depois que sua mãe decide casar-se novamente. No colégio, ela fica fascinada por Edward Cullen, um garoto que esconde um segredo obscuro. Eles se apaixonam, mas Edward sabe que quanto mais avançam no relacionamento, mais ele está colocando Bella e aqueles à sua volta em perigo."
+    },
 }
 
 @app.route('/')
@@ -224,4 +230,5 @@ if __name__ == '__main__':
     app.run(debug=True)
     # No final do seu app.py, deixe apenas:
 if __name__ == '__main__':
+
     app.run(debug=True)
