@@ -120,7 +120,7 @@ BANCO_DE_ATORES = {
         "nome": "Robert Pattinson",
         "foto": "https://media.themoviedb.org/t/p/w300_and_h450_face/8A4PS5iG7GWEAVFftyqMZKl3qcr.jpg",
         "bio": "Robert Douglas Thomas Pattinson (Londres, 13 de maio de 1986) é um ator, modelo e músico britânico. É mais conhecido por interpretar Edward Cullen nas cinco adaptações cinematográficas da saga Crepúsculo - Twilight, Bruce Wayne/Batman em The Batman de Matt Reeves pela DC Comics, Cedrico Diggory em 'Harry Potter e o Cálice de Fogo' e Neil em Tenet de Christopher Nolan. Protagonista das adaptações cinematográficas dos romances de Crepúsculo (2008-2012). Depois de estrelar os dramas românticos Remember Me (2010) e Water for Elephants (2011), Pattinson começou a trabalhar em filmes independentes.",
-        "filmes_ids": [13]},       
+        "filmes_ids": [13, 14]},       
     123: {
         "nome": "Taylor Lautner",
         "foto": "https://media.themoviedb.org/t/p/w300_and_h450_face/fpaxCUZEpBHtg6HuXjjJPf0tep9.jpg",
@@ -212,6 +212,12 @@ BANCO_DE_FILMES = {
         "trailer": "nowfetk7su0", "atores_ids": [122, 123, 124 ],
         "imagem": "https://media.themoviedb.org/t/p/w300_and_h450_face/o4ki1gYHkP6IWNdwjHvI9vzfpuC.jpg",
         "descricao": "Isabella Swan é uma adolescente que vai morar com seu pai em uma nova cidade depois que sua mãe decide casar-se novamente. No colégio, ela fica fascinada por Edward Cullen, um garoto que esconde um segredo obscuro. Eles se apaixonam, mas Edward sabe que quanto mais avançam no relacionamento, mais ele está colocando Bella e aqueles à sua volta em perigo."
+    },
+    14: {
+        "titulo": "Batman", "ano": 2022, "nota": "7.7", "genero": "Crime", 
+        "trailer": "IQaP0hYraMw", "atores_ids": [122,],
+        "imagem": "https://media.themoviedb.org/t/p/w300_and_h450_face/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg",
+        "descricao": "Em seu segundo ano de combate ao crime, Batman descobre corrupção em Gotham City que se conecta à sua própria família enquanto enfrenta um serial killer conhecido como Charada."
     },
 }
 
